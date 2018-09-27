@@ -1,4 +1,5 @@
 FROM jelastic/springboot:latest
+EXPOSE 8097
 VOLUME /tmp
 ARG JAR_FILE
 COPY ${JAR_FILE} app.jar
