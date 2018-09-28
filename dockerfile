@@ -1,8 +1,8 @@
-FROM openjdk:8-jdk-alpine
+#FROM openjdk:8-jdk-alpine
 
-#FROM openjdk:10-jre-slim
-COPY ./target/webapp-0.0.1-SNAPSHOT.jar /usr/src/hola/
-WORKDIR /usr/src/hola
+FROM openjdk:10-jre-slim
+COPY ./target/webapp-0.0.1-SNAPSHOT.jar /Users/carlosfemorale/Documents/estudos/dkr/webapp
+WORKDIR /Users/carlosfemorale/Documents/estudos/dkr/webapp
 EXPOSE 8097
 CMD ["java", "-jar", "webapp-0.0.1-SNAPSHOT.jar"]
 
